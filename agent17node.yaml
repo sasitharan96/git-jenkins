@@ -44,13 +44,13 @@ jenkins:
       remoteFS: "/home/jenkins/agent"
       retentionStrategy: "always"
   - permanent:
-      labelString: "git"
+      labelString: "agent11"
       launcher:
         ssh:
           credentialsId: "build-agent-creds"
-          host: "agent"
+          host: "agent11"
           port: 22
           sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
-      name: "git-agent"
+      name: "agent11"
       remoteFS: "/home/jenkins/agent"
       retentionStrategy: "always"
